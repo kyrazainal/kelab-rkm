@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktiviti & Galeri - Kelab Rakan Sukarela Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGASI SEBARIS -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logokelab.png" alt="Logo Kelab Rakan Sukarela Muda" class="site-logo">
+            <span class="brand-name">Kelab Rakan Sukarela Muda</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" data-bm="Laman Utama" data-en="Home">Laman Utama</a>
+            <a href="mengenai.html" data-bm="Mengenai Kami" data-en="About Us">Mengenai Kami</a>
+            <a href="aktiviti.html" class="active" data-bm="Aktiviti & Galeri" data-en="Activities & Gallery">Aktiviti & Galeri</a>
+            <a href="daftar-login.html" data-bm="Daftar / Log Masuk" data-en="Register / Login">Daftar / Log Masuk</a>
+            <a href="hubungi.html" data-bm="Hubungi" data-en="Contact Us">Hubungi</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="lang-switch">
+                <button id="btn-bm" class="lang-btn active" onclick="switchLanguage('bm')">BM</button>
+                <span class="divider">|</span>
+                <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <a href="daftar-login.html" class="btn-primary" data-bm="Sertai Kami" data-en="Join Us">Sertai Kami</a>
+        </div>
+    </header>
+
+    <!-- TAJUK HALAMAN -->
+    <section class="page-header">
+        <h1 data-bm="Aktiviti & Galeri Program" data-en="Activities & Program Gallery">Aktiviti & Galeri Program</h1>
+        <p data-bm="Paparan sorotan aktiviti kemasyarakatan dan senarai program akan datang" data-en="Showcase of community activities and upcoming program schedule">Paparan sorotan aktiviti kemasyarakatan dan senarai program akan datang</p>
+    </section>
+
+    <!-- JADUAL PROGRAM -->
+    <section class="content-section">
+        <div class="container">
+            <h2 data-bm="📅 Jadual Program Akan Datang" data-en="📅 Upcoming Program Schedule">📅 Jadual Program Akan Datang</h2>
+            <p class="section-subtitle" data-bm="Sertai kami dalam program kesukarelawanan terdekat di negeri anda" data-en="Join us in upcoming volunteer events near your state">Sertai kami dalam program kesukarelawanan terdekat di negeri anda</p>
+
+            <div class="event-table-container">
+                <table class="event-table">
+                    <thead>
+                        <tr>
+                            <th data-bm="Tarikh" data-en="Date">Tarikh</th>
+                            <th data-bm="Nama Program" data-en="Program Name">Nama Program</th>
+                            <th data-bm="Lokasi / Negeri" data-en="Location / State">Lokasi / Negeri</th>
+                            <th data-bm="Status" data-en="Status">Status</th>
+                            <th data-bm="Tindakan" data-en="Action">Tindakan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>15 Nov 2026</strong></td>
+                            <td data-bm="Misi Bantuan Dapur Rakyat" data-en="Community Soup Kitchen Relief">Misi Bantuan Dapur Rakyat</td>
+                            <td>Kuala Lumpur</td>
+                            <td><span class="status-badge open" data-bm="Pendaftaran Dibuka" data-en="Registration Open">Pendaftaran Dibuka</span></td>
+                            <td><a href="daftar-login.html" class="btn-sm" data-bm="Sertai (RSVP)" data-en="Join (RSVP)">Sertai (RSVP)</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>28 Nov 2026</strong></td>
+                            <td data-bm="Kempen Penanaman 1,000 Pokok" data-en="1,000 Trees Planting Drive">Kempen Penanaman 1,000 Pokok</td>
+                            <td>Selangor</td>
+                            <td><span class="status-badge open" data-bm="Pendaftaran Dibuka" data-en="Registration Open">Pendaftaran Dibuka</span></td>
+                            <td><a href="daftar-login.html" class="btn-sm" data-bm="Sertai (RSVP)" data-en="Join (RSVP)">Sertai (RSVP)</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>10 Dis 2026</strong></td>
+                            <td data-bm="Klinik Bimbingan Subjek SPM" data-en="SPM Tutoring Workshop">Klinik Bimbingan Subjek SPM</td>
+                            <td>Perak</td>
+                            <td><span class="status-badge soon" data-bm="Akan Datang" data-en="Coming Soon">Akan Datang</span></td>
+                            <td><a href="#" class="btn-sm disabled" data-bm="Belum Dibuka" data-en="Not Yet Open">Belum Dibuka</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI FOTO -->
+    <section class="gallery-section">
+        <div class="container text-center">
+            <h2 data-bm="🖼️ Galeri Foto Aktiviti" data-en="🖼️ Activity Photo Gallery">🖼️ Galeri Foto Aktiviti</h2>
+            <p class="section-subtitle" data-bm="Momen kebersamaan sukarelawan berbakti kepada masyarakat" data-en="Moments of volunteers serving the community together">Momen kebersamaan sukarelawan berbakti kepada masyarakat</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="gotongroyong.jpeg" alt="Gotong Royong">
+                    <div class="gallery-info">
+                        <h4 data-bm="Gotong-Royong Pembersihan" data-en="Beach Cleanup Drive">Gotong-Royong Pembersihan</h4>
+                        <p data-bm="Aktiviti menjaga kelestarian alam sekitar di persisiran pantai." data-en="Preserving environmental sustainability along coastal areas.">Aktiviti menjaga kelestarian alam sekitar di persisiran pantai.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="sumbangan.jpg" alt="Santunan Kebajikan">
+                    <div class="gallery-info">
+                        <h4 data-bm="Santunan & Sumbangan Kebajikan" data-en="Orphan Welfare Visit">Santunan & Sumbangan Kebajikan</h4>
+                        <p data-bm="Penyerahan kelengkapan dan bantuan makanan asas." data-en="Distributing essentials and basic food aid.">Penyerahan kelengkapan dan bantuan makanan asas.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="jualandana.jpg" alt="Jualan Dana">
+                    <div class="gallery-info">
+                        <h4 data-bm="Jualan Dana Amal" data-en="Charity Fundraising Sale">Jualan Dana Amal</h4>
+                        <p data-bm="Kutipan sumbangan bagi tabung bantuan kecemasan." data-en="Fundraising drive for emergency relief funds.">Kutipan sumbangan bagi tabung bantuan kecemasan.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="bantuankecemasan.jpg" alt="Bantuan Bencana">
+                    <div class="gallery-info">
+                        <h4 data-bm="Misi Bantuan Kecemasan" data-en="Emergency Disaster Relief">Misi Bantuan Kecemasan</h4>
+                        <p data-bm="Sumbangan tenaga dan pengagihan barangan asas." data-en="Manpower support and distribution of basic items.">Sumbangan tenaga dan pengagihan barangan asas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p data-bm="&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara." data-en="&copy; 2026 Kelab Rakan Sukarela Muda. All Rights Reserved.">&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara.</p>
+    </footer>
+
+    <!-- SKRIP PENUKAR BAHASA -->
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('preferredLang', lang);
+            if (lang === 'bm') {
+                document.getElementById('btn-bm').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-bm').classList.remove('active');
+            }
+
+            const elements = document.querySelectorAll('[data-bm][data-en]');
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-bm');
+                }
+            });
+        }
+
+        window.onload = function() {
+            const savedLang = localStorage.getItem('preferredLang') || 'bm';
+            switchLanguage(savedLang);
+        };
+    </script>
+
+</body>
+</html>
