@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar / Log Masuk - Kelab Rakan Sukarela Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGASI SEBARIS -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logokelab.png" alt="Logo Kelab Rakan Sukarela Muda" class="site-logo">
+            <span class="brand-name">Kelab Rakan Sukarela Muda</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" data-bm="Laman Utama" data-en="Home">Laman Utama</a>
+            <a href="mengenai.html" data-bm="Mengenai Kami" data-en="About Us">Mengenai Kami</a>
+            <a href="aktiviti.html" data-bm="Aktiviti & Galeri" data-en="Activities & Gallery">Aktiviti & Galeri</a>
+            <a href="daftar-login.html" class="active" data-bm="Daftar / Log Masuk" data-en="Register / Login">Daftar / Log Masuk</a>
+            <a href="hubungi.html" data-bm="Hubungi" data-en="Contact Us">Hubungi</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="lang-switch">
+                <button id="btn-bm" class="lang-btn active" onclick="switchLanguage('bm')">BM</button>
+                <span class="divider">|</span>
+                <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <a href="daftar-login.html" class="btn-primary" data-bm="Sertai Kami" data-en="Join Us">Sertai Kami</a>
+        </div>
+    </header>
+
+    <!-- TAJUK HALAMAN -->
+    <section class="page-header">
+        <h1 data-bm="Portal Ahli Sukarelawan" data-en="Volunteer Member Portal">Portal Ahli Sukarelawan</h1>
+        <p data-bm="Sertai komuniti sukarelawan atau log masuk ke akaun anda" data-en="Join the volunteer community or log in to your account">Sertai komuniti sukarelawan atau log masuk ke akaun anda</p>
+    </section>
+
+    <!-- CONTAINERS -->
+    <section class="auth-section">
+        <div class="auth-box">
+            
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="openTab('login')" data-bm="Log Masuk" data-en="Log In">Log Masuk</button>
+                <button class="tab-btn" onclick="openTab('register')" data-bm="Pendaftaran Baharu" data-en="New Registration">Pendaftaran Baharu</button>
+            </div>
+
+            <!-- BORANG LOG MASUK -->
+            <form id="login" class="auth-form active">
+                <h3 data-bm="Log Masuk Ahli" data-en="Member Login">Log Masuk Ahli</h3>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-envelope"></i> <span data-bm="Alamat E-mel" data-en="Email Address">Alamat E-mel</span></label>
+                    <input type="email" placeholder="contoh@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fa-solid fa-lock"></i> <span data-bm="Kata Laluan" data-en="Password">Kata Laluan</span></label>
+                    <input type="password" placeholder="Masukkan kata laluan" required>
+                </div>
+                <div class="form-options">
+                    <label><input type="checkbox"> <span data-bm="Ingat Saya" data-en="Remember Me">Ingat Saya</span></label>
+                    <a href="#" data-bm="Lupa Kata Laluan?" data-en="Forgot Password?">Lupa Kata Laluan?</a>
+                </div>
+                <button type="submit" class="btn-auth" data-bm="Log Masuk" data-en="Log In">Log Masuk</button>
+            </form>
+
+            <!-- BORANG PENDAFTARAN -->
+            <form id="register" class="auth-form">
+                <h3 data-bm="Borang Pendaftaran Ahli Baharu" data-en="New Member Registration Form">Borang Pendaftaran Ahli Baharu</h3>
+                
+                <div class="form-group">
+                    <label><i class="fa-solid fa-user"></i> <span data-bm="Nama Penuh" data-en="Full Name">Nama Penuh</span></label>
+                    <input type="text" placeholder="Seperti dalam Kad Pengenalan" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-id-card"></i> <span data-bm="Umur (15 - 50 Tahun)" data-en="Age (15 - 50 Years)">Umur (15 - 50 Tahun)</span></label>
+                        <input type="number" min="15" max="50" placeholder="Contoh: 19" required>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-map-location-dot"></i> <span data-bm="Negeri Kediaman" data-en="State of Residence">Negeri Kediaman</span></label>
+                        <select required>
+                            <option value="" data-bm="-- Pilih Negeri --" data-en="-- Select State --">-- Pilih Negeri --</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Pulau Pinang">Pulau Pinang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Kuala Lumpur">Kuala Lumpur</option>
+                            <option value="Negeri Sembilan">Negeri Sembilan</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Terengganu">Terengganu</option>
+                            <option value="Kelantan">Kelantan</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-solid fa-envelope"></i> <span data-bm="Alamat E-mel" data-en="Email Address">Alamat E-mel</span></label>
+                    <input type="email" placeholder="contoh@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-solid fa-lock"></i> <span data-bm="Kata Laluan Baharu" data-en="New Password">Kata Laluan Baharu</span></label>
+                    <input type="password" placeholder="Reka kata laluan" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-solid fa-image"></i> <span data-bm="Muat Naik Gambar Profil / Pasport (JPG / PNG)" data-en="Upload Profile / Passport Photo (JPG / PNG)">Muat Naik Gambar Profil / Pasport (JPG / PNG)</span></label>
+                    <input type="file" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn-auth" data-bm="Daftar Ahli Sekarang" data-en="Register Now">Daftar Ahli Sekarang</button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p data-bm="&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara." data-en="&copy; 2026 Kelab Rakan Sukarela Muda. All Rights Reserved.">&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara.</p>
+    </footer>
+
+    <!-- SKRIP TUKAR TAB & BAHASA -->
+    <script>
+        function openTab(tabName) {
+            var forms = document.querySelectorAll('.auth-form');
+            var tabs = document.querySelectorAll('.tab-btn');
+            
+            forms.forEach(function(form) { form.classList.remove('active'); });
+            tabs.forEach(function(tab) { tab.classList.remove('active'); });
+
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        function switchLanguage(lang) {
+            localStorage.setItem('preferredLang', lang);
+            if (lang === 'bm') {
+                document.getElementById('btn-bm').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-bm').classList.remove('active');
+            }
+
+            const elements = document.querySelectorAll('[data-bm][data-en]');
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-bm');
+                }
+            });
+        }
+
+        window.onload = function() {
+            const savedLang = localStorage.getItem('preferredLang') || 'bm';
+            switchLanguage(savedLang);
+        };
+    </script>
+
+</body>
+</html>

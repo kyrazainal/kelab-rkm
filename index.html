@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laman Web Kelab Rakan Sukarela Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGASI SEBARIS -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logokelab.png" alt="Logo Kelab Rakan Sukarela Muda" class="site-logo">
+            <span class="brand-name">Kelab Rakan Sukarela Muda</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" class="active" data-bm="Laman Utama" data-en="Home">Laman Utama</a>
+            <a href="mengenai.html" data-bm="Mengenai Kami" data-en="About Us">Mengenai Kami</a>
+            <a href="aktiviti.html" data-bm="Aktiviti & Galeri" data-en="Activities & Gallery">Aktiviti & Galeri</a>
+            <a href="daftar-login.html" data-bm="Daftar / Log Masuk" data-en="Register / Login">Daftar / Log Masuk</a>
+            <a href="hubungi.html" data-bm="Hubungi" data-en="Contact Us">Hubungi</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="lang-switch">
+                <button id="btn-bm" class="lang-btn active" onclick="switchLanguage('bm')">BM</button>
+                <span class="divider">|</span>
+                <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <a href="daftar-login.html" class="btn-primary" data-bm="Sertai Kami" data-en="Join Us">Sertai Kami</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-bm="Bersama Membawa Perubahan, Menghubung Jiwa Sukarela" data-en="Together Bringing Change, Connecting Volunteer Souls">Bersama Membawa Perubahan, Menghubung Jiwa Sukarela</h1>
+            <p data-bm="Platform kesukarelawanan inklusif untuk semua rakyat Malaysia berumur 15 hingga 50 tahun di seluruh 14 buah negeri." data-en="Inclusive volunteering platform for all Malaysians aged 15 to 50 across all 14 states.">Platform kesukarelawanan inklusif untuk semua rakyat Malaysia berumur 15 hingga 50 tahun di seluruh 14 buah negeri.</p>
+            <div class="hero-buttons">
+                <a href="daftar-login.html" class="btn-primary-lg" data-bm="Sertai Kami Sekarang" data-en="Join Us Now">Sertai Kami Sekarang</a>
+                <a href="aktiviti.html" class="btn-secondary-lg" data-bm="Terokai Aktiviti" data-en="Explore Activities">Terokai Aktiviti</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTIK IMPAK -->
+    <section class="stats-section">
+        <div class="stat-card">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3>14 <span data-bm="Negeri" data-en="States">Negeri</span></h3>
+            <p data-bm="Cawangan & Operasi Seluruh Malaysia" data-en="Branches & Operations Nationwide">Cawangan & Operasi Seluruh Malaysia</p>
+        </div>
+        <div class="stat-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>50+ <span data-bm="Program" data-en="Programs">Program</span></h3>
+            <p data-bm="Aktiviti Kebajikan Dijalankan" data-en="Welfare Activities Conducted">Aktiviti Kebajikan Dijalankan</p>
+        </div>
+        <div class="stat-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>1,000+ <span data-bm="Ahli" data-en="Members">Ahli</span></h3>
+            <p data-bm="Sukarelawan Berdaftar" data-en="Registered Volunteers">Sukarelawan Berdaftar</p>
+        </div>
+    </section>
+
+    <!-- SEKSI VIDEO MONTAJ AKTIVITI -->
+    <section class="video-section">
+        <h2 data-bm="Saksikan Semangat Kesukarelawanan Kami" data-en="Witness Our Volunteer Spirit">Saksikan Semangat Kesukarelawanan Kami</h2>
+        <p class="section-subtitle" data-bm="Tonton rakaman sorotan aktiviti dan impak program yang telah dilaksanakan di seluruh Malaysia" data-en="Watch highlights of our activities and program impact conducted across Malaysia">Tonton rakaman sorotan aktiviti dan impak program yang telah dilaksanakan di seluruh Malaysia</p>
+
+        <div class="video-container">
+            <video controls class="main-video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- SOROTAN AKTIVITI -->
+    <section class="featured-section">
+        <h2 data-bm="Aktiviti Sorotan Terkini" data-en="Latest Highlighted Activities">Aktiviti Sorotan Terkini</h2>
+        <p class="section-subtitle" data-bm="Sumbangan tenaga dan prihatin komuniti di seluruh negeri" data-en="Community contribution and care across all states">Sumbangan tenaga dan prihatin komuniti di seluruh negeri</p>
+
+        <div class="activity-grid">
+            <div class="activity-card">
+                <div class="card-tag" data-bm="Gotong-Royong" data-en="Cleanup Drive">Gotong-Royong</div>
+                <h3 data-bm="Gotong-Royong Pembersihan Pantai" data-en="Beach Cleanup Drive">Gotong-Royong Pembersihan Pantai</h3>
+                <p><i class="fa-regular fa-calendar"></i> 12 Mac 2026 | <i class="fa-solid fa-location-dot"></i> Selangor</p>
+                <p data-bm="Aktiviti pembersihan persisiran pantai dan kesedaran alam sekitar bersama komuniti setempat." data-en="Beachfront cleanup activity and environmental awareness with the local community.">Aktiviti pembersihan persisiran pantai dan kesedaran alam sekitar bersama komuniti setempat.</p>
+            </div>
+            <div class="activity-card">
+                <div class="card-tag" data-bm="Anak Yatim" data-en="Orphan Welfare">Anak Yatim</div>
+                <h3 data-bm="Program Santunan Anak Yatim" data-en="Orphanage Visit & Welfare Program">Program Santunan Anak Yatim</h3>
+                <p><i class="fa-regular fa-calendar"></i> 28 Februari 2026 | <i class="fa-solid fa-location-dot"></i> Kuala Lumpur</p>
+                <p data-bm="Penyerahan sumbangan kelengkapan persekolahan dan aktiviti ramah mesra bersama anak-anak yatim." data-en="Handover of school supplies and bonding activities with orphans.">Penyerahan sumbangan kelengkapan persekolahan dan aktiviti ramah mesra bersama anak-anak yatim.</p>
+            </div>
+            <div class="activity-card">
+                <div class="card-tag" data-bm="Jualan Dana" data-en="Fundraising">Jualan Dana</div>
+                <h3 data-bm="Kempen Jualan Dana Kebajikan" data-en="Welfare Fundraising Campaign">Kempen Jualan Dana Kebajikan</h3>
+                <p><i class="fa-regular fa-calendar"></i> 15 Januari 2026 | <i class="fa-solid fa-location-dot"></i> Perak</p>
+                <p data-bm="Jualan amal makanan dan kraf tangan bagi mengumpul dana tabung bantuan kecemasan." data-en="Charity food and handicraft sale to raise funds for emergency relief.">Jualan amal makanan dan kraf tangan bagi mengumpul dana tabung bantuan kecemasan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI SUKARELAWAN -->
+    <section class="testimonial-section">
+        <h2 data-bm="Kisah & Testimoni Sukarelawan" data-en="Volunteer Stories & Testimonials">Kisah & Testimoni Sukarelawan</h2>
+        <p class="section-subtitle" data-bm="Pengalaman sebenar daripada ahli berdaftar pelbagai peringkat umur di seluruh Malaysia" data-en="Real experiences from registered members of various age groups across Malaysia">Pengalaman sebenar daripada ahli berdaftar pelbagai peringkat umur di seluruh Malaysia</p>
+
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="quote-text" data-bm="&quot;Menyertai aktiviti gotong-royong dan santunan anak yatim memberi saya peluang untuk berbakti kepada masyarakat sambil membina keyakinan diri.&quot;" data-en="&quot;Joining cleanup drives and visiting orphanages gave me the opportunity to serve society while building self-confidence.&quot;">"Menyertai aktiviti gotong-royong dan santunan anak yatim memberi saya peluang untuk berbakti kepada masyarakat sambil membina keyakinan diri."</p>
+                <div class="user-info">
+                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <h4>Nurul Imran Bin Rosli</h4>
+                        <span data-bm="Ahli Sukarelawan (Umur 19, Selangor)" data-en="Volunteer Member (Age 19, Selangor)">Ahli Sukarelawan (Umur 19, Selangor)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="quote-text" data-bm="&quot;Platform yang sangat sistematik! Pengurusan program yang mudah memudahkan kami yang berkerjaya untuk menyumbang tenaga.&quot;" data-en="&quot;A very systematic platform! Easy program management makes it convenient for working professionals to contribute.&quot;">"Platform yang sangat sistematik! Pengurusan program yang mudah memudahkan kami yang berkerjaya untuk menyumbang tenaga."</p>
+                <div class="user-info">
+                    <div class="user-avatar"><i class="fa-solid fa-user"></i></div>
+                    <div>
+                        <h4>Siti Aminah Binti Ahmad</h4>
+                        <span data-bm="Ahli Sukarelawan (Umur 34, Perak)" data-en="Volunteer Member (Age 34, Perak)">Ahli Sukarelawan (Umur 34, Perak)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p data-bm="&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara." data-en="&copy; 2026 Kelab Rakan Sukarela Muda. All Rights Reserved.">&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara.</p>
+    </footer>
+
+    <!-- SKRIP PENUKAR BAHASA -->
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('preferredLang', lang);
+            if (lang === 'bm') {
+                document.getElementById('btn-bm').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-bm').classList.remove('active');
+            }
+
+            const elements = document.querySelectorAll('[data-bm][data-en]');
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-bm');
+                }
+            });
+        }
+
+        // Mengekalkan pilihan bahasa bila berpindah muka surat
+        window.onload = function() {
+            const savedLang = localStorage.getItem('preferredLang') || 'bm';
+            switchLanguage(savedLang);
+        };
+    </script>
+
+</body>
+</html>

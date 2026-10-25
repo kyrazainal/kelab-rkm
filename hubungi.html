@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Kelab Rakan Sukarela Muda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVIGASI SEBARIS -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logokelab.png" alt="Logo Kelab Rakan Sukarela Muda" class="site-logo">
+            <span class="brand-name">Kelab Rakan Sukarela Muda</span>
+        </div>
+        
+        <nav class="nav-links">
+            <a href="index.html" data-bm="Laman Utama" data-en="Home">Laman Utama</a>
+            <a href="mengenai.html" data-bm="Mengenai Kami" data-en="About Us">Mengenai Kami</a>
+            <a href="aktiviti.html" data-bm="Aktiviti & Galeri" data-en="Activities & Gallery">Aktiviti & Galeri</a>
+            <a href="daftar-login.html" data-bm="Daftar / Log Masuk" data-en="Register / Login">Daftar / Log Masuk</a>
+            <a href="hubungi.html" class="active" data-bm="Hubungi" data-en="Contact Us">Hubungi</a>
+        </nav>
+
+        <div class="header-actions">
+            <div class="lang-switch">
+                <button id="btn-bm" class="lang-btn active" onclick="switchLanguage('bm')">BM</button>
+                <span class="divider">|</span>
+                <button id="btn-en" class="lang-btn" onclick="switchLanguage('en')">EN</button>
+            </div>
+            <a href="daftar-login.html" class="btn-primary" data-bm="Sertai Kami" data-en="Join Us">Sertai Kami</a>
+        </div>
+    </header>
+
+    <!-- TAJUK HALAMAN -->
+    <section class="page-header">
+        <h1 data-bm="Hubungi Kami" data-en="Contact Us">Hubungi Kami</h1>
+        <p data-bm="Ada sebarang pertanyaan atau cadangan? Kami sedia membantu anda" data-en="Have questions or suggestions? We are here to help">Ada sebarang pertanyaan atau cadangan? Kami sedia membantu anda</p>
+    </section>
+
+    <!-- MAKLUMAT HUBUNGI -->
+    <section class="contact-section">
+        <div class="container contact-grid">
+            
+            <div class="contact-info">
+                <h2 data-bm="Maklumat Ibu Pejabat" data-en="Headquarters Info">Maklumat Ibu Pejabat</h2>
+                <p class="contact-desc" data-bm="Hubungi kami melalui saluran rasmi atau hadir ke ibu pejabat kami untuk sebarang urusan program dan pendaftaran." data-en="Reach out through our official channels or visit headquarters for program inquiries and registration.">Hubungi kami melalui saluran rasmi atau hadir ke ibu pejabat kami untuk sebarang urusan program dan pendaftaran.</p>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h4 data-bm="Alamat Utama" data-en="Main Address">Alamat Utama</h4>
+                        <p>Aras 3, Wisma Belia & Komuniti,<br>Pusat Bandar Barat, 42300 Puncak Alam, Selangor.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h4 data-bm="No. Telefon" data-en="Phone Number">No. Telefon</h4>
+                        <p>+60 3-5544 8822 / +60 12-365 6089</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h4 data-bm="E-mel Rasmi" data-en="Official Email">E-mel Rasmi</h4>
+                        <p>sokongan@rakansukarela.org.my</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4 data-bm="Waktu Operasi" data-en="Operating Hours">Waktu Operasi</h4>
+                        <p data-bm="Isnin – Jumaat: 8:30 Pagi – 5:30 Petang<br>Sabtu – Ahad: Tutup (Kecuali Hari Program)" data-en="Monday – Friday: 8:30 AM – 5:30 PM<br>Saturday – Sunday: Closed (Except Program Days)">Isnin – Jumaat: 8:30 Pagi – 5:30 Petang<br>Sabtu – Ahad: Tutup (Kecuali Hari Program)</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4 data-bm="Ikuti Kami Di Media Sosial:" data-en="Follow Us On Social Media:">Ikuti Kami Di Media Sosial:</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BORANG PERTANYAAN -->
+            <div class="contact-form-box">
+                <h2 data-bm="Hantar Mesej / Pertanyaan" data-en="Send Us a Message">Hantar Mesej / Pertanyaan</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-user"></i> <span data-bm="Nama Penuh" data-en="Full Name">Nama Penuh</span></label>
+                        <input type="text" placeholder="Masukkan nama anda" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-envelope"></i> <span data-bm="Alamat E-mel" data-en="Email Address">Alamat E-mel</span></label>
+                        <input type="email" placeholder="contoh@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-phone"></i> <span data-bm="No. Telefon / WhatsApp" data-en="Phone / WhatsApp No.">No. Telefon / WhatsApp</span></label>
+                        <input type="tel" placeholder="0123456789" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-heading"></i> <span data-bm="Subjek / Tajuk Pertanyaan" data-en="Subject / Inquiry Title">Subjek / Tajuk Pertanyaan</span></label>
+                        <input type="text" placeholder="Contoh: Pertanyaan Program Gotong-Royong" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-message"></i> <span data-bm="Mesej Anda" data-en="Your Message">Mesej Anda</span></label>
+                        <textarea rows="5" placeholder="Tuliskan pertanyaan atau mesej anda di sini..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-auth" data-bm="Hantar Mesej" data-en="Send Message">Hantar Mesej</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PETA -->
+    <section class="map-section">
+        <div class="container text-center">
+            <h2 data-bm="📍 Lokasi Peta Ibu Pejabat" data-en="📍 Headquarters Map Location">📍 Lokasi Peta Ibu Pejabat</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15933.824888806297!2d101.4235!3d3.2325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc42861c028ad7%3A0x89d6e8b4bb68882b!2sPuncak%20Alam%2C%20Selangor!5e0!3m2!1sms!2smy!4v1700000000000!5m2!1sms!2smy" width="100%" height="380" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p data-bm="&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara." data-en="&copy; 2026 Kelab Rakan Sukarela Muda. All Rights Reserved.">&copy; 2026 Kelab Rakan Sukarela Muda. Hak Cipta Terpelihara.</p>
+    </footer>
+
+    <!-- SKRIP PENUKAR BAHASA -->
+    <script>
+        function switchLanguage(lang) {
+            localStorage.setItem('preferredLang', lang);
+            if (lang === 'bm') {
+                document.getElementById('btn-bm').classList.add('active');
+                document.getElementById('btn-en').classList.remove('active');
+            } else {
+                document.getElementById('btn-en').classList.add('active');
+                document.getElementById('btn-bm').classList.remove('active');
+            }
+
+            const elements = document.querySelectorAll('[data-bm][data-en]');
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.innerHTML = el.getAttribute('data-en');
+                } else {
+                    el.innerHTML = el.getAttribute('data-bm');
+                }
+            });
+        }
+
+        window.onload = function() {
+            const savedLang = localStorage.getItem('preferredLang') || 'bm';
+            switchLanguage(savedLang);
+        };
+    </script>
+
+</body>
+</html>
